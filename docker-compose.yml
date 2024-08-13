@@ -7,8 +7,8 @@ services:
       - "8000:8000"
     depends_on:
       - mongo
-    # environment:
-      # - MONGO_URL=mongodb://mongo:27017/library-management-system
+    environment:
+      - MONGO_URL=${MONGO_URL}
     networks:
       - app-network
 
